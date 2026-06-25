@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Voyages</title>
+    <link rel="stylesheet" href="../CSS/output.css">
+</head>
+<body>
+     <!-- ==================================================
+     GLOBAL STICKY HEADER
+=================================================== -->
+
+<header class="sticky top-0 z-50 bg-sand/90 backdrop-blur-md shadow-premium">
+
+    <nav class="container-custom">
+
+        <div class="flex items-center justify-between h-20">
+
+            <!-- Logo -->
+
+            <a href="index.html"
+               class="font-serif text-3xl font-semibold tracking-wide">
+
+                Aura Voyages
+
+            </a>
+
+
+            <!-- Desktop Navigation -->
+
+            <ul class="hidden md:flex items-center gap-10">
+
+                <li>
+                    <a href="index.html" class="nav-link">
+                        Home
+                    </a>
+                </li>
+
+
+                <!-- Dropdown Parent -->
+
+                <li class="relative group">
+
+                    <a href="destination.html" class="nav-link flex items-center gap-1">
+                           
+                            Destination
+
+                        </a>
+
+
+
+                    <!-- Dropdown Menu -->
+
+                    <div class="absolute left-0 top-full mt-4
+                                hidden group-hover:block
+                                bg-white shadow-premium
+                                rounded-xl min-w-52 p-4">
+
+                        <ul class="space-y-3">
+
+                            <li>
+                                <a href="#" class="nav-link">
+                                    Asia
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="nav-link">
+                                    Europe
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="nav-link">
+                                    Americas
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </li>
+
+
+                <li>
+                    <a href="about.html" class="nav-link">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="journal.html" class="nav-link">
+                        Travel Journal
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html" class="btn-primary">
+                        Book Now
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!-- Mobile Menu Button -->
+
+            <button class="md:hidden text-2xl">
+
+                ☰
+
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+
+<main>
+
+    <!-- ==================================================
+         ABOUT HERO SECTION
+         --------------------------------------------------
+         Elegant editorial introduction.
+         Large typography with immersive imagery.
+    =================================================== -->
+
+    <section
+        class="relative min-h-screen bg-cover bg-center bg-no-repeat"
+         style="background-image: url('../images/abt\ 2.jpg');">
+        
+
+        <!-- Overlay -->
+
+        <div class="absolute inset-0 bg-black/45"></div>
+
+        <!-- Content -->
+
+        <div
+            class="container-custom relative z-10
+                   h-full flex items-center">
+
+            <div class="max-w-3xl text-white">
+
+                <p
+                    class="uppercase tracking-[0.35em]
+                           text-accent mb-5">
+
+                    Our Story
+
+                </p>
+
+                <h1
+                    class="font-serif text-5xl md:text-7xl
+                           leading-tight mb-8">
+
+                    Travel Should
+                    Transform You.
+
+                </h1>
+
+                <p class="text-lg md:text-xl leading-relaxed">
+
+                    Aura Voyages was born from a simple belief:
+                    the most meaningful journeys happen when
+                    we slow down, immerse ourselves, and
+                    connect deeply with places and people.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         BRAND STORY SECTION
+         --------------------------------------------------
+         Split Layout:
+         - Image on one side.
+         - Narrative on the other.
+         - Stacks naturally on mobile.
+    =================================================== -->
+
+    <section class="py-24">
+
+        <div
+            class="container-custom grid
+                   lg:grid-cols-2 gap-16
+                   items-center">
+
+            <!-- Story Image -->
+
+            <div>
+
+                <img
+                    src="../images/abt hero.jpg"
+                    alt="Travelers exploring local culture"
+
+                    class="rounded-3xl shadow-premium
+                           w-full h-162.5
+                           object-cover">
+
+            </div>
+
+
+
+            <!-- Story Content -->
+
+            <div>
+
+                <p
+                    class="uppercase tracking-[0.3em]
+                           text-emerald-500 mb-4">
+
+                    The Aura Journey
+
+                </p>
+
+                <h2
+                    class="font-serif text-4xl md:text-5xl
+                           mb-8">
+
+                    Beyond Checklists.
+                    Beyond Crowds.
+
+                </h2>
+
+                <div class="space-y-6 text-lg leading-relaxed">
+
+                    <p>
+
+                        In a world of rushed itineraries and
+                        overcrowded landmarks, Aura Voyages
+                        was created to inspire a different
+                        way of traveling.
+
+                    </p>
+
+                    <p>
+
+                        We design journeys that invite travelers
+                        to linger longer, explore deeper, and
+                        discover hidden stories often missed
+                        by traditional tourism.
+
+                    </p>
+
+                    <p>
+
+                        Whether sharing tea with local artisans
+                        in Kyoto or wandering through secluded
+                        villages along the Amalfi Coast, our
+                        experiences are curated to create
+                        genuine human connection.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         PHILOSOPHY SECTION
+         --------------------------------------------------
+         Responsive three-column values grid.
+    =================================================== -->
+
+    <section class="bg-cream py-24">
+
+        <div class="container-custom">
+
+            <div
+                class="text-center max-w-3xl
+                       mx-auto mb-16">
+
+                <p
+                    class="uppercase tracking-[0.3em]
+                           text-emerald-500 mb-4">
+
+                    Our Philosophy
+
+                </p>
+
+                <h2
+                    class="font-serif text-4xl md:text-5xl
+                           mb-6">
+
+                    The Principles That Guide Us
+
+                </h2>
+
+            </div>
+
+
+
+            <!-- Values Grid -->
+
+            <div
+                class="grid grid-cols-1
+                       md:grid-cols-2
+                       lg:grid-cols-3 gap-8">
+
+                <!-- Value Card -->
+
+                <article
+                    class="bg-white rounded-3xl
+                           p-10 shadow-premium">
+
+                    <div class="text-5xl mb-6">
+
+                        🌿
+
+                    </div>
+
+                    <h3
+                        class="font-serif text-2xl mb-4">
+
+                        Slow Travel
+
+                    </h3>
+
+                    <p class="leading-relaxed">
+
+                        We believe meaningful travel happens
+                        when you take time to truly experience
+                        a destination.
+
+                    </p>
+
+                </article>
+
+
+
+                <article
+                    class="bg-white rounded-3xl
+                           p-10 shadow-premium">
+
+                    <div class="text-5xl mb-6">
+
+                        🤝
+
+                    </div>
+
+                    <h3
+                        class="font-serif text-2xl mb-4">
+
+                        Authentic Connections
+
+                    </h3>
+
+                    <p class="leading-relaxed">
+
+                        Every itinerary is designed to foster
+                        genuine encounters with local cultures
+                        and communities.
+
+                    </p>
+
+                </article>
+
+
+
+                <article
+                    class="bg-white rounded-3xl
+                           p-10 shadow-premium">
+
+                    <div class="text-5xl mb-6">
+
+                        ✨
+
+                    </div>
+
+                    <h3
+                        class="font-serif text-2xl mb-4">
+
+                        Curated Excellence
+
+                    </h3>
+
+                    <p class="leading-relaxed">
+
+                        We meticulously craft every detail to
+                        ensure a seamless and memorable journey.
+
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         TEAM SHOWCASE
+         --------------------------------------------------
+         Premium profile card layout.
+         1 column mobile.
+         3 columns desktop.
+    =================================================== -->
+
+    <section class="py-24">
+
+        <div class="container-custom">
+
+            <div class="text-center mb-16">
+
+                <p
+                    class="uppercase tracking-[0.3em]
+                           text-emerald-500 mb-4">
+
+                    Meet The Team
+
+                </p>
+
+                <h2
+                    class="font-serif text-4xl md:text-5xl">
+
+                    The Curators Behind The Journeys
+
+                </h2>
+
+            </div>
+
+
+
+            <!-- Team Grid -->
+
+            <div
+                class="grid grid-cols-1
+                       md:grid-cols-2
+                       lg:grid-cols-3 gap-8">
+
+                <!-- Team Card -->
+
+                <article
+                    class="bg-white rounded-3xl
+                           overflow-hidden
+                           shadow-premium">
+
+                    <img
+                        src="../images/Gemini_Generated_Image_gnuyawgnuyawgnuy (1).png"
+                        alt="Founder"
+
+                        class="h-96 w-full object-cover">
+
+                    <div class="p-8 text-center">
+
+                        <h3
+                            class="font-serif text-3xl mb-2">
+
+                            Emmanuel Ebuka Ezeako
+
+                        </h3>
+
+                        <p
+                            class="uppercase text-sm
+                                   tracking-[0.2em]
+                                   text-emerald-500 mb-4">
+
+                            Founder & Creative Director
+
+                        </p>
+
+                        <p>
+
+                            Passionate about immersive travel
+                            experiences and cultural storytelling.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <article
+                    class="bg-white rounded-3xl
+                           overflow-hidden
+                           shadow-premium">
+
+                    <img
+                        src="../images/abt img1.jpg"
+                        alt="Experience Director"
+
+                        class="h-96 w-full object-cover">
+
+                    <div class="p-8 text-center">
+
+                        <h3
+                            class="font-serif text-3xl mb-2">
+
+                            Luca Romano
+
+                        </h3>
+
+                        <p
+                            class="uppercase text-sm
+                                   tracking-[0.2em]
+                                   text-emerald-500 mb-4">
+
+                            Experience Director
+
+                        </p>
+
+                        <p>
+
+                            Designing bespoke itineraries
+                            across Europe and Asia.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <article
+                    class="bg-white rounded-3xl
+                           overflow-hidden
+                           shadow-premium">
+
+                    <img
+                        src="../images/abt img2.jpg"
+                        alt="Community Lead"
+
+                        class="h-96 w-full object-cover">
+
+                    <div class="p-8 text-center">
+
+                        <h3
+                            class="font-serif text-3xl mb-2">
+
+                            Maya Chen
+
+                        </h3>
+
+                        <p
+                            class="uppercase text-sm
+                                   tracking-[0.2em]
+                                   text-emerald-500 mb-4">
+
+                            Community Partnerships Lead
+
+                        </p>
+
+                        <p>
+
+                            Building meaningful relationships
+                            with trusted local partners worldwide.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+<!-- ==================================================
+     GLOBAL FOOTER
+=================================================== -->
+
+<footer class="bg-emerald-700 text-white mt-auto">
+
+    <div class="container-custom py-16">
+
+        <div class="grid gap-10 md:grid-cols-3">
+
+            <!-- Brand -->
+
+            <div>
+
+                <h2 class="font-serif text-3xl mb-4">
+
+                    Aura Voyages
+
+                </h2>
+
+                <p class="leading-relaxed text-sm">
+
+                    Curating slow travel experiences and hidden gems
+                    for discerning explorers.
+
+                </p>
+
+            </div>
+
+
+            <!-- Navigation -->
+
+            <div>
+
+                <h3 class="font-semibold mb-4">
+                    Explore
+                </h3>
+
+                <ul class="space-y-3">
+
+                    <li>
+                        <a href="index.html" class="footer-link">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="destinations.html" class="footer-link">
+                            Destinations
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html" class="footer-link">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="journal.html" class="footer-link">
+                            Travel Journal
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Contact -->
+
+            <div>
+
+                <h3 class="font-semibold mb-4">
+                    Connect
+                </h3>
+
+                <ul class="space-y-3 text-sm">
+
+                    <li>hello@auravoyages.com</li>
+
+                    <li>+1 (555) 123-4567</li>
+
+                    <li>Worldwide Boutique Experiences</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom Bar -->
+
+        <div class="border-t border-white/20 mt-12 pt-8 text-center text-sm">
+
+            © 2026 Aura Voyages. Crafted for meaningful journeys.
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

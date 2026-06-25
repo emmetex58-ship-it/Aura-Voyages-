@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Voyages</title>
+    <link rel="stylesheet" href="../CSS/output.css">
+</head>
+<body>
+   <!-- ==================================================
+     GLOBAL STICKY HEADER
+=================================================== -->
+
+<header class="sticky top-0 z-50 bg-sand/90 backdrop-blur-md shadow-premium">
+
+    <nav class="container-custom">
+
+        <div class="flex items-center justify-between h-20">
+
+            <!-- Logo -->
+
+            <a href="index.html"
+               class="font-serif text-3xl font-semibold tracking-wide">
+
+                Aura Voyages
+
+            </a>
+
+
+            <!-- Desktop Navigation -->
+
+            <ul class="hidden md:flex items-center gap-10">
+
+                <li>
+                    <a href="index.html" class="nav-link">
+                        Home
+                    </a>
+                </li>
+
+
+                <!-- Dropdown Parent -->
+
+                <li class="relative group">
+
+                    <a href="destination.html" class="nav-link flex items-center gap-1">
+                           
+                            Destination
+
+                        </a>
+
+
+
+                    <!-- Dropdown Menu -->
+
+                    <div class="absolute left-0 top-full mt-4
+                                hidden group-hover:block
+                                bg-white shadow-premium
+                                rounded-xl min-w-52 p-4">
+
+                        <ul class="space-y-3">
+
+                            <li>
+                                <a href="#" class="nav-link">
+                                    Asia
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="nav-link">
+                                    Europe
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="nav-link">
+                                    Americas
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </li>
+
+
+                <li>
+                    <a href="about.html" class="nav-link">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="journal.html" class="nav-link">
+                        Travel Journal
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html" class="btn-primary">
+                        Book Now
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!-- Mobile Menu Button -->
+
+            <button class="md:hidden text-2xl">
+
+                ☰
+
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+      
+<main>
+
+    <!-- ==================================================
+         JOURNAL HERO SECTION
+         --------------------------------------------------
+         Purpose:
+         Introduces visitors to the editorial side
+         of Aura Voyages.
+    =================================================== -->
+
+    <section
+        class="relative min-h-screen bg-cover bg-center bg-no-repeat"
+        style="background-image: url('../images/blog\ hero.jpg');">
+
+        <!-- Dark Overlay -->
+
+        <div class="absolute inset-0 bg-black/45"></div>
+
+        <!-- Hero Content -->
+
+        <div
+            class="container-custom relative z-10
+                   h-full flex items-center">
+
+            <div class="max-w-3xl text-white">
+
+                <p
+                    class="uppercase tracking-[0.35em]
+                           text-accent mb-5">
+
+                    Travel Journal
+
+                </p>
+
+                <h1
+                    class="font-serif text-5xl md:text-7xl
+                           leading-tight mb-8">
+
+                    Stories From
+                    The Road Less Traveled
+
+                </h1>
+
+                <p class="text-lg md:text-xl leading-relaxed">
+
+                    Inspiring stories, hidden destinations,
+                    cultural insights, and reflections from
+                    journeys across the globe.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         FEATURED ARTICLE SECTION
+         --------------------------------------------------
+         Editorial Banner Layout
+
+         - Large immersive image.
+         - Overlay content.
+         - Premium magazine feel.
+    =================================================== -->
+
+    <section class="py-24">
+
+        <div class="container-custom">
+
+            <article
+                class="group relative overflow-hidden
+                       rounded-3xl">
+
+                <!-- Featured Image -->
+
+                <img
+                    src="../images/blog1.jpg"
+                    alt="Featured travel story"
+
+                    class="h-100 w-full object-cover
+                           transition duration-700
+                           group-hover:scale-105">
+
+                <!-- Overlay -->
+
+                <div
+                    class="absolute inset-0
+                           bg-liner-to-t
+                           from-black/90
+                           via-black/40
+                           to-transparent">
+
+                </div>
+
+                <!-- Featured Story Content -->
+
+                <div
+                    class="absolute bottom-0
+                           p-8 md:p-14
+                           max-w-3xl text-white">
+
+                    <!-- Category Tag -->
+
+                    <span
+                        class="inline-block
+                               bg-accent text-charcoal
+                               px-4 py-2 rounded-full
+                               text-sm uppercase
+                               tracking-wider mb-6">
+
+                        Featured Story
+
+                    </span>
+
+                    <!-- Article Title -->
+
+                    <h2
+                        class="font-serif text-4xl
+                               md:text-6xl mb-6">
+
+                        Finding Stillness
+                        Among Kyoto's Hidden Temples
+
+                    </h2>
+
+                    <!-- Excerpt -->
+
+                    <p
+                        class="text-lg leading-relaxed mb-6">
+
+                        A journey through Kyoto's quiet
+                        backstreets reveals a slower,
+                        more meaningful way to experience
+                        Japan's cultural heart.
+
+                    </p>
+
+                    <!-- Author -->
+
+                    <p class="text-sm uppercase tracking-widest">
+
+                        By Sophia Bennett · June 2026
+
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         RECENT STORIES SECTION
+         --------------------------------------------------
+         Responsive Grid Structure:
+
+         Mobile  : 1 column
+         Tablet  : 2 columns
+         Desktop : 3 columns
+
+         Each card contains:
+         - Image
+         - Tag
+         - Title
+         - Excerpt
+         - Author Byline
+    =================================================== -->
+
+    <section class="pb-24">
+
+        <div class="container-custom">
+
+            <!-- Section Heading -->
+
+            <div class="text-center mb-16">
+
+                <p
+                    class="uppercase tracking-[0.3em]
+                           text-emerald-500 mb-4">
+
+                    Recent Stories
+
+                </p>
+
+                <h2
+                    class="font-serif text-4xl md:text-5xl">
+
+                    Latest Journal Entries
+
+                </h2>
+
+            </div>
+
+
+
+            <!-- Stories Grid -->
+
+            <div
+                class="grid grid-cols-1
+                       md:grid-cols-2
+                       lg:grid-cols-3 gap-8">
+
+
+
+                <!-- STORY CARD 1 -->
+
+                <article
+                    class="group bg-white rounded-3xl
+                           overflow-hidden
+                           shadow-premium">
+
+                    <div class="overflow-hidden">
+
+                        <img
+                            src="../images/blog2.jpg"
+                            alt="Bali Story"
+
+                            class="h-72 w-full object-cover
+                                   transition duration-700
+                                   group-hover:scale-110">
+
+                    </div>
+
+                    <div class="p-8">
+
+                        <span
+                            class="inline-block
+                                   bg-cream px-4 py-2
+                                   rounded-full text-sm
+                                   mb-5">
+
+                            Wellness
+
+                        </span>
+
+                        <h3
+                            class="font-serif text-3xl mb-4">
+
+                            The Art of Slow Mornings in Bali
+
+                        </h3>
+
+                        <p
+                            class="leading-relaxed mb-6">
+
+                            Discover how embracing unhurried
+                            mornings transformed an entire
+                            journey through Bali.
+
+                        </p>
+
+                        <p
+                            class="text-sm uppercase
+                                   tracking-wider text-emerald-500">
+
+                            By Maya Chen
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- STORY CARD 2 -->
+
+                <article
+                    class="group bg-white rounded-3xl
+                           overflow-hidden
+                           shadow-premium">
+
+                    <div class="overflow-hidden">
+
+                        <img
+                            src="../images/blog3.jpg"
+                            alt="Amalfi Story"
+
+                            class="h-72 w-full object-cover
+                                   transition duration-700
+                                   group-hover:scale-110">
+
+                    </div>
+
+                    <div class="p-8">
+
+                        <span
+                            class="inline-block
+                                   bg-cream px-4 py-2
+                                   rounded-full text-sm
+                                   mb-5">
+
+                            Culinary
+
+                        </span>
+
+                        <h3
+                            class="font-serif text-3xl mb-4">
+
+                            Dining Along The Amalfi Coast
+
+                        </h3>
+
+                        <p
+                            class="leading-relaxed mb-6">
+
+                            Exploring family-run trattorias
+                            and timeless Mediterranean flavors.
+
+                        </p>
+
+                        <p
+                            class="text-sm uppercase
+                                   tracking-wider text-emerald-500">
+
+                            By Luca Romano
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- STORY CARD 3 -->
+
+                <article
+                    class="group bg-white rounded-3xl
+                           overflow-hidden
+                           shadow-premium">
+
+                    <div class="overflow-hidden">
+
+                        <img
+                            src="../images/blog4.jpg"
+                            alt="Peru Story"
+
+                            class="h-72 w-full object-cover
+                                   transition duration-700
+                                   group-hover:scale-110">
+
+                    </div>
+
+                    <div class="p-8">
+
+                        <span
+                            class="inline-block
+                                   bg-cream px-4 py-2
+                                   rounded-full text-sm
+                                   mb-5">
+
+                            Culture
+
+                        </span>
+
+                        <h3
+                            class="font-serif text-3xl mb-4">
+
+                            Sacred Valley:
+                            Lessons From The Andes
+
+                        </h3>
+
+                        <p
+                            class="leading-relaxed mb-6">
+
+                            Reflections on community,
+                            tradition, and mountain life.
+
+                        </p>
+
+                        <p
+                            class="text-sm uppercase
+                                   tracking-wider text-emerald-500">
+
+                            By Sophia Bennett
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- STORY CARD 4 -->
+
+                <article
+                    class="group bg-white rounded-3xl
+                           overflow-hidden
+                           shadow-premium">
+
+                    <div class="overflow-hidden">
+
+                        <img
+                            src="../images/blog5.jpg"
+                            alt="Scotland Story"
+
+                            class="h-72 w-full object-cover
+                                   transition duration-700
+                                   group-hover:scale-110">
+
+                    </div>
+
+                    <div class="p-8">
+
+                        <span
+                            class="inline-block
+                                   bg-cream px-4 py-2
+                                   rounded-full text-sm
+                                   mb-5">
+
+                            Adventure
+
+                        </span>
+
+                        <h3
+                            class="font-serif text-3xl mb-4">
+
+                            Chasing Mist Through
+                            The Highlands
+
+                        </h3>
+
+                        <p
+                            class="leading-relaxed mb-6">
+
+                            A scenic road trip across Scotland's
+                            rugged landscapes.
+
+                        </p>
+
+                        <p
+                            class="text-sm uppercase
+                                   tracking-wider text-emerald-500">
+
+                            By Luca Romano
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- STORY CARD 5 -->
+
+                <article
+                    class="group bg-white rounded-3xl
+                           overflow-hidden
+                           shadow-premium">
+
+                    <div class="overflow-hidden">
+
+                        <img
+                            src="../images/blog6.jpg"
+                            alt="Vietnam Story"
+
+                            class="h-72 w-full object-cover
+                                   transition duration-700
+                                   group-hover:scale-110">
+
+                    </div>
+
+                    <div class="p-8">
+
+                        <span
+                            class="inline-block
+                                   bg-cream px-4 py-2
+                                   rounded-full text-sm
+                                   mb-5">
+
+                            Local Life
+
+                        </span>
+
+                        <h3
+                            class="font-serif text-3xl mb-4">
+
+                            Hidden Villages of Northern Vietnam
+
+                        </h3>
+
+                        <p
+                            class="leading-relaxed mb-6">
+
+                            Encounters with local communities
+                            high in the mountains.
+
+                        </p>
+
+                        <p
+                            class="text-sm uppercase
+                                   tracking-wider text-emerald-500">
+
+                            By Maya Chen
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- STORY CARD 6 -->
+
+                <article
+                    class="group bg-white rounded-3xl
+                           overflow-hidden
+                           shadow-premium">
+
+                    <div class="overflow-hidden">
+
+                        <img
+                            src="../images/blog7.jpg"
+                            alt="Patagonia Story"
+
+                            class="h-72 w-full object-cover
+                                   transition duration-700
+                                   group-hover:scale-110">
+
+                    </div>
+
+                    <div class="p-8">
+
+                        <span
+                            class="inline-block
+                                   bg-cream px-4 py-2
+                                   rounded-full text-sm
+                                   mb-5">
+
+                            Wilderness
+
+                        </span>
+
+                        <h3
+                            class="font-serif text-3xl mb-4">
+
+                            Patagonia and
+                            The Beauty of Solitude
+
+                        </h3>
+
+                        <p
+                            class="leading-relaxed mb-6">
+
+                            Exploring vast landscapes at the
+                            edge of the world.
+
+                        </p>
+
+                        <p
+                            class="text-sm uppercase
+                                   tracking-wider text-emerald-500">
+
+                            By Sophia Bennett
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         NEWSLETTER CTA SECTION
+         --------------------------------------------------
+         Encourages visitors to stay connected.
+    =================================================== -->
+
+    <section class="bg-cream py-24">
+
+        <div
+            class="container-custom max-w-4xl
+                   text-center">
+
+            <p
+                class="uppercase tracking-[0.3em]
+                       text-emerald-500 mb-4">
+
+                Stay Inspired
+
+            </p>
+
+            <h2
+                class="font-serif text-4xl md:text-5xl
+                       mb-8">
+
+                Receive New Stories
+                & Travel Inspiration
+
+            </h2>
+
+            <p
+                class="text-lg leading-relaxed
+                       mb-10">
+
+                Join our community and receive curated
+                travel stories, hidden gems, and exclusive
+                destination insights directly in your inbox.
+
+            </p>
+
+            <a href="contact.html"
+               class="btn-primary">
+
+                Subscribe To The Journal
+
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+
+
+
+
+<!-- ==================================================
+     GLOBAL FOOTER
+=================================================== -->
+
+<footer class="bg-emerald-700 text-white mt-auto">
+
+    <div class="container-custom py-16">
+
+        <div class="grid gap-10 md:grid-cols-3">
+
+            <!-- Brand -->
+
+            <div>
+
+                <h2 class="font-serif text-3xl mb-4">
+
+                    Aura Voyages
+
+                </h2>
+
+                <p class="leading-relaxed text-sm">
+
+                    Curating slow travel experiences and hidden gems
+                    for discerning explorers.
+
+                </p>
+
+            </div>
+
+
+            <!-- Navigation -->
+
+            <div>
+
+                <h3 class="font-semibold mb-4">
+                    Explore
+                </h3>
+
+                <ul class="space-y-3">
+
+                    <li>
+                        <a href="index.html" class="footer-link">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="destinations.html" class="footer-link">
+                            Destinations
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html" class="footer-link">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="journal.html" class="footer-link">
+                            Travel Journal
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Contact -->
+
+            <div>
+
+                <h3 class="font-semibold mb-4">
+                    Connect
+                </h3>
+
+                <ul class="space-y-3 text-sm">
+
+                    <li>hello@auravoyages.com</li>
+
+                    <li>+1 (555) 123-4567</li>
+
+                    <li>Worldwide Boutique Experiences</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom Bar -->
+
+        <div class="border-t border-white/20 mt-12 pt-8 text-center text-sm">
+
+            © 2026 Aura Voyages. Crafted for meaningful journeys.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>

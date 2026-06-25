@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Voyages</title>
+    <link rel="stylesheet" href="../CSS/output.css">
+</head>
+<body>
+    <!-- ==================================================
+     GLOBAL STICKY HEADER
+=================================================== -->
+
+<header class="sticky top-0 z-50 bg-sand/90 backdrop-blur-md shadow-premium">
+
+    <nav class="container-custom">
+
+        <div class="flex items-center justify-between h-20">
+
+            <!-- Logo -->
+
+            <a href="index.html"
+               class="font-serif text-3xl font-semibold tracking-wide">
+
+                Aura Voyages
+
+            </a>
+
+
+            <!-- Desktop Navigation -->
+
+            <ul class="hidden md:flex items-center gap-10">
+
+                <li>
+                    <a href="index.html" class="nav-link">
+                        Home
+                    </a>
+                </li>
+
+
+                <!-- Dropdown Parent -->
+
+                <li class="relative group">
+
+                    <a href="destination.html" class="nav-link flex items-center gap-1">
+                           
+                            Destination
+
+                        </a>
+
+
+
+                    <!-- Dropdown Menu -->
+
+                    <div class="absolute left-0 top-full mt-4
+                                hidden group-hover:block
+                                bg-white shadow-premium
+                                rounded-xl min-w-52 p-4">
+
+                        <ul class="space-y-3">
+
+                            <li>
+                                <a href="#" class="nav-link">
+                                    Asia
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="nav-link">
+                                    Europe
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="nav-link">
+                                    Americas
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </li>
+
+
+                <li>
+                    <a href="about.html" class="nav-link">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="journal.html" class="nav-link">
+                        Travel Journal
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html" class="btn-primary">
+                        Book Now
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!-- Mobile Menu Button -->
+
+            <button class="md:hidden text-2xl">
+
+                ☰
+
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <!-- ==================================================
+         HERO SECTION
+         --------------------------------------------------
+         Vibe:
+         - Large immersive visual experience.
+         - Full viewport height.
+         - Editorial luxury magazine feel.
+         - Overlay ensures premium readability.
+    =================================================== -->
+
+    <section
+        class="relative min-h-screen bg-cover bg-center bg-no-repeat"
+        style="background-image: url('../images/background\ hero\ image.jpg');">
+
+        <!-- Dark Overlay Improves Text Contrast -->
+
+        <div class="absolute inset-0 bg-black/45"></div>
+
+        <!-- Hero Content Container -->
+
+        <div
+            class="relative z-10 container-custom
+                   min-h-screen flex items-center">
+
+            <!-- Content Wrapper -->
+
+            <div class="max-w-3xl text-white">
+
+                <!-- Small Eyebrow Text -->
+
+                <p
+                    class="uppercase tracking-[0.35em]
+                           text-sm mb-6 text-accent">
+
+                    Curated Slow Travel Experiences
+                </p>
+
+                <!-- Main Headline -->
+
+                <h1
+                    class="font-serif text-5xl md:text-7xl
+                           lg:text-8xl leading-tight mb-8">
+
+                    Discover Hidden Corners
+                    of the World.
+                </h1>
+
+                <!-- Supporting Copy -->
+
+                <p
+                    class="text-lg md:text-xl max-w-2xl
+                           leading-relaxed mb-10">
+
+                    Aura Voyages crafts meaningful journeys
+                    for curious travelers seeking authenticity,
+                    elegance, and unforgettable stories beyond
+                    the tourist trail.
+                </p>
+
+                <!-- CTA Buttons -->
+
+                <div
+                    class="flex flex-col sm:flex-row gap-4">
+
+                    <a href="destination.html"
+                       class="btn-primary text-center">
+
+                        Explore Destinations
+
+                    </a>
+
+                    <a href="contact.html"
+                       class="border border-white px-6 py-3
+                              rounded-full text-center
+                              transition duration-300
+                              hover:bg-white hover:text-charcoal">
+
+                        Plan Your Journey
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         FEATURED DESTINATIONS SECTION
+         --------------------------------------------------
+         Grid Strategy:
+         - 1 column on mobile.
+         - 2 columns on tablets.
+         - 3 columns on desktop.
+         - Editorial card layout with image emphasis.
+    =================================================== -->
+
+    <section class="py-24">
+
+        <div class="container-custom">
+
+            <!-- Section Header -->
+
+            <div class="text-center max-w-3xl mx-auto mb-16">
+
+                <p
+                    class="uppercase tracking-[0.3em]
+                           text-sm text-emerald-500 mb-4">
+
+                    Signature Escapes
+                </p>
+
+                <h2 class="font-serif text-4xl md:text-5xl mb-6">
+
+                    Featured Destinations
+
+                </h2>
+
+                <p class="text-lg leading-relaxed">
+
+                    Explore handpicked destinations designed
+                    for travelers who value depth, culture,
+                    and genuine local experiences.
+
+                </p>
+
+            </div>
+
+
+            <!-- Responsive Grid -->
+
+            <div
+                class="grid grid-cols-1
+                       md:grid-cols-2
+                       lg:grid-cols-3 gap-8">
+
+                <!-- ================= CARD 1 ================= -->
+
+                <article
+                    class="bg-white rounded-3xl overflow-hidden
+                           shadow-premium hover:-translate-y-2
+                           transition duration-500">
+
+                    <img
+                        src="../images/hero image1.jpg"
+                        alt="Japanese countryside"
+                        class="h-80 w-full object-cover">
+
+                    <div class="p-8">
+
+                        <h3
+                            class="font-serif text-3xl mb-4">
+
+                            Kyoto, Japan
+
+                        </h3>
+
+                        <p class="mb-6 leading-relaxed">
+
+                            Wander ancient temple paths,
+                            quiet tea houses, and hidden
+                            gardens in Japan's cultural heart.
+
+                        </p>
+
+                        <a href="#"
+                           class="text-emerald-600 font-semibold">
+
+                            Discover More →
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ================= CARD 2 ================= -->
+
+                <article
+                    class="bg-white rounded-3xl overflow-hidden
+                           shadow-premium hover:-translate-y-2
+                           transition duration-500">
+
+                    <img
+                        src="../images/hero image 2.jpg"
+                        alt="Italian coastal village"
+                        class="h-80 w-full object-cover">
+
+                    <div class="p-8">
+
+                        <h3
+                            class="font-serif text-3xl mb-4">
+
+                            Amalfi Coast, Italy
+
+                        </h3>
+
+                        <p class="mb-6 leading-relaxed">
+
+                            Experience seaside villages,
+                            family-run trattorias, and timeless
+                            Mediterranean charm.
+
+                        </p>
+
+                        <a href="#"
+                           class="text-emerald-600 font-semibold">
+
+                            Discover More →
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ================= CARD 3 ================= -->
+
+                <article
+                    class="bg-white rounded-3xl overflow-hidden
+                           shadow-premium hover:-translate-y-2
+                           transition duration-500">
+
+                    <img
+                        src="../images/hero image3.jpg"
+                        alt="Andean mountains in Peru"
+                        class="h-80 w-full object-cover">
+
+                    <div class="p-8">
+
+                        <h3
+                            class="font-serif text-3xl mb-4">
+
+                            Sacred Valley, Peru
+
+                        </h3>
+
+                        <p class="mb-6 leading-relaxed">
+
+                            Journey through breathtaking
+                            mountain landscapes and immerse
+                            yourself in ancient Andean culture.
+
+                        </p>
+
+                        <a href="#"
+                           class="text-emerald-600 font-semibold">
+
+                            Discover More →
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         WHY CHOOSE US SECTION
+         --------------------------------------------------
+         Grid Structure:
+         - Stacked cards on mobile.
+         - Three equal columns on desktop.
+         - Minimal luxury aesthetic.
+    =================================================== -->
+
+    <section class="bg-cream py-24">
+
+        <div class="container-custom">
+
+            <!-- Section Heading -->
+
+            <div class="text-center max-w-3xl mx-auto mb-16">
+
+                <p
+                    class="uppercase tracking-[0.3em]
+                           text-sm text-emerald-500 mb-4">
+
+                    Why Aura Voyages
+                </p>
+
+                <h2 class="font-serif text-4xl md:text-5xl mb-6">
+
+                    Travel Differently
+
+                </h2>
+
+            </div>
+
+
+
+            <!-- Value Proposition Grid -->
+
+            <div
+                class="grid grid-cols-1
+                       md:grid-cols-2
+                       lg:grid-cols-3 gap-8">
+
+                <!-- Value Card -->
+
+                <article
+                    class="bg-white p-10 rounded-3xl
+                           shadow-premium">
+
+                    <img 
+                        src="../images/Earth image.jpg"
+                        alt="World earth"
+                        class="text-5xl mb-6">
+                        
+                        
+
+                    <h3
+                        class="font-serif text-2xl mb-4">
+
+                        Hidden Gems
+
+                    </h3>
+
+                    <p class="leading-relaxed">
+
+                        We uncover extraordinary places
+                        beyond crowded tourist routes,
+                        creating authentic travel moments.
+
+                    </p>
+
+                </article>
+
+
+
+                <article
+                    class="bg-white p-10 rounded-3xl
+                           shadow-premium">
+
+                    <div class="text-5xl mb-6">
+
+                        ✨
+
+                    </div>
+
+                    <h3
+                        class="font-serif text-2xl mb-4">
+
+                        Personalized Journeys
+
+                    </h3>
+
+                    <p class="leading-relaxed">
+
+                        Every itinerary is thoughtfully
+                        designed around your interests,
+                        pace, and travel dreams.
+
+                    </p>
+
+                </article>
+
+
+
+                <article
+                    class="bg-white p-10 rounded-3xl
+                           shadow-premium">
+
+                    <div class="text-5xl mb-6">
+
+                        🤝
+
+                    </div>
+
+                    <h3
+                        class="font-serif text-2xl mb-4">
+
+                        Local Connections
+
+                    </h3>
+
+                    <p class="leading-relaxed">
+
+                        Experience destinations through
+                        meaningful interactions with local
+                        communities and trusted guides.
+
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- ==================================================
+     GLOBAL FOOTER
+=================================================== -->
+
+<footer class="bg-emerald-700 text-white mt-auto">
+
+    <div class="container-custom py-16">
+
+        <div class="grid gap-10 md:grid-cols-3">
+
+            <!-- Brand -->
+
+            <div>
+
+                <h2 class="font-serif text-3xl mb-4">
+
+                    Aura Voyages
+
+                </h2>
+
+                <p class="leading-relaxed text-sm">
+
+                    Curating slow travel experiences and hidden gems
+                    for discerning explorers.
+
+                </p>
+
+            </div>
+
+
+            <!-- Navigation -->
+
+            <div>
+
+                <h3 class="font-semibold mb-4">
+                    Explore
+                </h3>
+
+                <ul class="space-y-3">
+
+                    <li>
+                        <a href="index.html" class="footer-link">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="destinations.html" class="footer-link">
+                            Destinations
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html" class="footer-link">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="journal.html" class="footer-link">
+                            Travel Journal
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Contact -->
+
+            <div>
+
+                <h3 class="font-semibold mb-4">
+                    Connect
+                </h3>
+
+                <ul class="space-y-3 text-sm">
+
+                    <li>hello@auravoyages.com</li>
+
+                    <li>+1 (555) 123-4567</li>
+
+                    <li>Worldwide Boutique Experiences</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom Bar -->
+
+        <div class="border-t border-white/20 mt-12 pt-8 text-center text-sm">
+
+            © 2026 Aura Voyages. Crafted for meaningful journeys.
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

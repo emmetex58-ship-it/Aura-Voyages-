@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Voyages</title>
+    <link rel="stylesheet" href="../CSS/output.css">
+</head>
+<body>
+     <!-- ==================================================
+     GLOBAL STICKY HEADER
+=================================================== -->
+
+<header class="sticky top-0 z-50 bg-sand/90 backdrop-blur-md shadow-premium">
+
+    <nav class="container-custom">
+
+        <div class="flex items-center justify-between h-20">
+
+            <!-- Logo -->
+
+            <a href="index.html"
+               class="font-serif text-3xl font-semibold tracking-wide">
+
+                Aura Voyages
+
+            </a>
+
+
+            <!-- Desktop Navigation -->
+
+            <ul class="hidden md:flex items-center gap-10">
+
+                <li>
+                    <a href="index.html" class="nav-link">
+                        Home
+                    </a>
+                </li>
+
+
+                <!-- Dropdown Parent -->
+
+                <li class="relative group">
+
+                    <a href="destination.html" class="nav-link flex items-center gap-1">
+                           
+                            Destination
+
+                        </a>
+
+
+
+                    <!-- Dropdown Menu -->
+
+                    <div class="absolute left-0 top-full mt-4
+                                hidden group-hover:block
+                                bg-white shadow-premium
+                                rounded-xl min-w-52 p-4">
+
+                        <ul class="space-y-3">
+
+                            <li>
+                                <a href="#" class="nav-link">
+                                    Asia
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="nav-link">
+                                    Europe
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="nav-link">
+                                    Americas
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </li>
+
+
+                <li>
+                    <a href="about.html" class="nav-link">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="journal.html" class="nav-link">
+                        Travel Journal
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html" class="btn-primary">
+                        Book Now
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!-- Mobile Menu Button -->
+
+            <button class="md:hidden text-2xl">
+
+                ☰
+
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+
+<main>
+
+    <!-- ==================================================
+         CONTACT HERO SECTION
+         --------------------------------------------------
+         Premium concierge-inspired introduction.
+         Creates an inviting atmosphere.
+    =================================================== -->
+
+    <section
+        class="relative h-[60vh] bg-cover bg-center"
+         style="background-image: url('../images/con\ 1.jpg');">
+
+
+        <!-- Overlay -->
+
+        <div class="absolute inset-0 bg-black/45"></div>
+
+        <!-- Hero Content -->
+
+        <div
+            class="container-custom relative z-10
+                   h-full flex items-center">
+
+            <div class="max-w-3xl text-white">
+
+                <p
+                    class="uppercase tracking-[0.35em]
+                           text-accent mb-5">
+
+                    Contact & Booking
+
+                </p>
+
+                <h1
+                    class="font-serif text-5xl md:text-7xl
+                           leading-tight mb-8">
+
+                    Begin Your
+                    Next Great Journey
+
+                </h1>
+
+                <p class="text-lg md:text-xl leading-relaxed">
+
+                    Whether you're dreaming of secluded
+                    coastlines or immersive cultural
+                    experiences, our travel curators are
+                    ready to design your perfect escape.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         CONTACT + FORM SECTION
+         --------------------------------------------------
+         Split Layout Strategy:
+
+         Mobile:
+         - Single column.
+
+         Desktop:
+         - Two equal columns.
+
+         Gap utility creates generous whitespace,
+         reinforcing the premium editorial aesthetic.
+    =================================================== -->
+
+    <section class="py-24">
+
+        <div
+            class="container-custom grid
+                   lg:grid-cols-2 gap-16">
+
+
+
+            <!-- ============================================
+                 LEFT COLUMN
+                 CONTACT INFORMATION
+            ============================================= -->
+
+            <div>
+
+                <!-- Section Heading -->
+
+                <p
+                    class="uppercase tracking-[0.3em]
+                           text-emerald-500 mb-4">
+
+                    Get In Touch
+
+                </p>
+
+                <h2
+                    class="font-serif text-4xl md:text-5xl
+                           mb-8">
+
+                    Speak With
+                    Our Travel Curators
+
+                </h2>
+
+                <p
+                    class="text-lg leading-relaxed
+                           mb-12">
+
+                    Every unforgettable journey begins
+                    with a conversation. Reach out and
+                    allow us to curate an experience
+                    tailored exclusively for you.
+
+                </p>
+
+
+
+                <!-- Contact Information Block -->
+
+                <div class="space-y-10">
+
+                    <!-- Email -->
+
+                    <div>
+
+                        <h3
+                            class="font-serif text-2xl mb-2">
+
+                            Email
+
+                        </h3>
+
+                        <p>
+
+                            hello@auravoyages.com
+
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- Phone -->
+
+                    <div>
+
+                        <h3
+                            class="font-serif text-2xl mb-2">
+
+                            Telephone
+
+                        </h3>
+
+                        <p>
+
+                            +1 (555) 123-4567
+
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- Office Address -->
+
+                    <div>
+
+                        <h3
+                            class="font-serif text-2xl mb-2">
+
+                            Studio Office
+
+                        </h3>
+
+                        <p class="leading-relaxed">
+
+                            Aura Voyages<br>
+                            18 Wellington Square<br>
+                            London, United Kingdom
+
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- Office Hours -->
+
+                    <div>
+
+                        <h3
+                            class="font-serif text-2xl mb-4">
+
+                            Office Hours
+
+                        </h3>
+
+                        <ul class="space-y-2">
+
+                            <li>
+                                Monday – Friday:
+                                9:00 AM – 6:00 PM
+                            </li>
+
+                            <li>
+                                Saturday:
+                                10:00 AM – 3:00 PM
+                            </li>
+
+                            <li>
+                                Sunday:
+                                Closed
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+
+                    <!-- Social Links -->
+
+                    <div>
+
+                        <h3
+                            class="font-serif text-2xl mb-4">
+
+                            Follow Our Journeys
+
+                        </h3>
+
+                        <div
+                            class="flex flex-wrap gap-6">
+
+                            <a href="#"
+                               class="nav-link">
+
+                                Instagram
+
+                            </a>
+
+                            <a href="#"
+                               class="nav-link">
+
+                                Pinterest
+
+                            </a>
+
+                            <a href="#"
+                               class="nav-link">
+
+                                Facebook
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+            <!-- ============================================
+                 RIGHT COLUMN
+                 BOOKING / INQUIRY FORM
+            ============================================= -->
+
+            <!--
+                Form Design Notes:
+
+                - Large padding enhances readability.
+                - Vertical spacing is controlled using
+                  space-y utilities.
+                - Focus states reinforce brand identity.
+            -->
+
+            <div
+                class="bg-white rounded-3xl
+                       shadow-premium p-8 md:p-12">
+
+                <h2
+                    class="font-serif text-4xl mb-8">
+
+                    Start Planning
+
+                </h2>
+
+
+                <!-- Inquiry Form -->
+
+                <form class="space-y-6">
+
+                    <!-- ==================================
+                         ROW 1
+                         Two columns on desktop.
+                    =================================== -->
+
+                    <div
+                        class="grid md:grid-cols-2 gap-6">
+
+                        <!-- First Name -->
+
+                        <div>
+
+                            <label
+                                for="first-name"
+                                class="block mb-2">
+
+                                First Name
+
+                            </label>
+
+                            <input
+                                type="text"
+                                id="first-name"
+
+                                class="w-full rounded-xl
+                                       border border-gray-300
+                                       px-5 py-4
+
+                                       focus:outline-none
+                                       focus:ring-2
+                                       focus:ring-emerald-500
+                                       focus:border-emerald-500">
+
+                        </div>
+
+
+
+                        <!-- Last Name -->
+
+                        <div>
+
+                            <label
+                                for="last-name"
+                                class="block mb-2">
+
+                                Last Name
+
+                            </label>
+
+                            <input
+                                type="text"
+                                id="last-name"
+
+                                class="w-full rounded-xl
+                                       border border-gray-300
+                                       px-5 py-4
+
+                                       focus:outline-none
+                                       focus:ring-2
+                                       focus:ring-emerald-500
+                                       focus:border-emerald-500">
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Email -->
+
+                    <div>
+
+                        <label
+                            for="email"
+                            class="block mb-2">
+
+                            Email Address
+
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+
+                            class="w-full rounded-xl
+                                   border border-gray-300
+                                   px-5 py-4
+
+                                   focus:outline-none
+                                   focus:ring-2
+                                   focus:ring-emerald-500
+                                   focus:border-emerald-500">
+
+                    </div>
+
+
+
+                    <!-- Destination -->
+
+                    <div>
+
+                        <label
+                            for="destination"
+                            class="block mb-2">
+
+                            Preferred Destination
+
+                        </label>
+
+                        <select
+                            id="destination"
+
+                            class="w-full rounded-xl
+                                   border border-gray-300
+                                   px-5 py-4
+
+                                   focus:outline-none
+                                   focus:ring-2
+                                   focus:ring-emerald-500
+                                   focus:border-emerald-500">
+
+                            <option>
+                                Select A Destination
+                            </option>
+
+                            <option>Asia</option>
+                            <option>Europe</option>
+                            <option>Americas</option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- Travel Date -->
+
+                    <div>
+
+                        <label
+                            for="travel-date"
+                            class="block mb-2">
+
+                            Desired Travel Date
+
+                        </label>
+
+                        <input
+                            type="date"
+                            id="travel-date"
+
+                            class="w-full rounded-xl
+                                   border border-gray-300
+                                   px-5 py-4
+
+                                   focus:outline-none
+                                   focus:ring-2
+                                   focus:ring-emerald-500
+                                   focus:border-emerald-500">
+
+                    </div>
+
+
+
+                    <!-- Message -->
+
+                    <div>
+
+                        <label
+                            for="message"
+                            class="block mb-2">
+
+                            Tell Us About Your Dream Journey
+
+                        </label>
+
+                        <textarea
+                            id="message"
+                            rows="6"
+
+                            class="w-full rounded-xl
+                                   border border-gray-300
+                                   px-5 py-4
+
+                                   focus:outline-none
+                                   focus:ring-2
+                                   focus:ring-emerald-500
+                                   focus:border-emerald-500">
+
+                        </textarea>
+
+                    </div>
+
+
+
+                    <!-- Submit Button -->
+
+                    <button
+                        type="submit"
+
+                        class="btn-primary w-full">
+
+                        Request A Personalized Itinerary
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+
+
+<!-- ==================================================
+     GLOBAL FOOTER
+=================================================== -->
+
+<footer class="bg-emerald-700 text-white mt-auto">
+
+    <div class="container-custom py-16">
+
+        <div class="grid gap-10 md:grid-cols-3">
+
+            <!-- Brand -->
+
+            <div>
+
+                <h2 class="font-serif text-3xl mb-4">
+
+                    Aura Voyages
+
+                </h2>
+
+                <p class="leading-relaxed text-sm">
+
+                    Curating slow travel experiences and hidden gems
+                    for discerning explorers.
+
+                </p>
+
+            </div>
+
+
+            <!-- Navigation -->
+
+            <div>
+
+                <h3 class="font-semibold mb-4">
+                    Explore
+                </h3>
+
+                <ul class="space-y-3">
+
+                    <li>
+                        <a href="index.html" class="footer-link">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="destinations.html" class="footer-link">
+                            Destinations
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html" class="footer-link">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="journal.html" class="footer-link">
+                            Travel Journal
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Contact -->
+
+            <div>
+
+                <h3 class="font-semibold mb-4">
+                    Connect
+                </h3>
+
+                <ul class="space-y-3 text-sm">
+
+                    <li>hello@auravoyages.com</li>
+
+                    <li>+1 (555) 123-4567</li>
+
+                    <li>Worldwide Boutique Experiences</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom Bar -->
+
+        <div class="border-t border-white/20 mt-12 pt-8 text-center text-sm">
+
+            © 2026 Aura Voyages. Crafted for meaningful journeys.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+
+
+</body>
+</html>
