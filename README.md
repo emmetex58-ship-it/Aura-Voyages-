@@ -8,7 +8,7 @@ The website showcases a luxury travel brand through elegant layouts, immersive i
 
 ##  Live Preview
 
-*(Add your deployed website link here once deployed)*
+https://emmetex58-ship-it.github.io/Aura-Voyages-/
 
 ##  Project Overview
 
